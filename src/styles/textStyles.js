@@ -54,6 +54,11 @@ const textStyles = StyleSheet.create({
             fontWeight:'400',
             marginLeft:10,
             flex:1
+        },
+        btnTextCenter:{
+            textAlign:'center',
+            fontWeight:'600',
+            alignSelf:'center',
         }
 
 })

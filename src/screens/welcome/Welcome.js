@@ -108,16 +108,31 @@ const Welcome = () => {
             <View style={[Viewstyles.viewF9F9FB, Viewstyles.viewRow, WelcomeStyles.bottomView]}>
                                 
                <Text style={{flex:1}}>Tools</Text>
-               <TouchableOpacity onPress={()=>{
-                   page == 3 ? navigation.replace('Auth'):viewPager.current.setPage(page + 1)
-               }}>          
-               <View style={[Viewstyles.viewRadius8,WelcomeStyles.btnNext]}>
-               <Image
-                                style={WelcomeStyles.arrowLeft}
-                                source={ImageAssets.arrowLeft} />
-                                
-                   </View>       
-                   </TouchableOpacity>
+               {
+                   page != 3 ?
+                   <TouchableOpacity onPress={()=>{
+                    viewPager.current.setPage(page + 1)
+                }}>          
+                <View style={[Viewstyles.viewRadius8,WelcomeStyles.btnNext]}>
+                <Image
+                                 style={WelcomeStyles.arrowLeft}
+                                 source={ImageAssets.arrowLeft} />
+                                 
+                    </View>       
+                    </TouchableOpacity> :
+
+<TouchableOpacity onPress={()=>{
+   navigation.replace('Auth')
+}}>          
+<View style={[WelcomeStyles.view50]}>
+
+    <Text style={[textStyles.textWhite,textStyles.btnTextCenter]}>{Consts.getStarted}</Text>
+                 
+    </View>       
+    </TouchableOpacity> 
+
+                }
+                   
             </View>
         </SafeAreaView>
     )

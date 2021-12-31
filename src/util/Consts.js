@@ -24,6 +24,7 @@ const Consts = {
   myservice:'My Service',
   notification:'Notification',
   myaccount:'My Account',
-  servieWash:'Services on Wash'
+  servieWash:'Services on Wash',
+  getStarted:'Get Started',
 }
 export default Consts;

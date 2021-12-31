@@ -137,7 +137,7 @@ screenOptions={{
 const App = () =>{
   return(
   <NavigationContainer>
-  <Stack.Navigator initialRouteName='HomeTab' screenOptions={{headerShown: false}}>
+  <Stack.Navigator initialRouteName='Welcome' screenOptions={{headerShown: false}}>
     <Stack.Screen name="Splash" component={Splash} />
     <Stack.Screen name="Welcome" component={Welcome} />
     <Stack.Screen name="Auth" component={Auth} />

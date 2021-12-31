@@ -73,7 +73,15 @@ const WelcomeStyles = StyleSheet.create({
     },
     unselectedDot:{
         backgroundColor:colors.black
+    },
+    view50:{
+        height:50,
+        width:140,
+        backgroundColor:colors.primary,
+        justifyContent:'center',
+        borderRadius:8
     }
+   
 
 
 
